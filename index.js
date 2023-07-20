@@ -3,7 +3,7 @@ const express = require('express')
 const axios = require('axios')
 const services = require('./services.json')
 const ENV = process.env
-const PORT = ENV.PORT
+const PORT = ENV.PORT || 3000
 const app = express()
 const appInit = () => {
     console.log('Server started at PORT'.replace('PORT', PORT))
